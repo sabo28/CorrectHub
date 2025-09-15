@@ -1,0 +1,2 @@
+ALTER TABLE "report" ADD COLUMN "assigneeId" uuid;--> statement-breakpoint
+ALTER TABLE "report" ADD CONSTRAINT "report_assigneeId_user_id_fk" FOREIGN KEY ("assigneeId") REFERENCES "public"."user"("id") ON DELETE no action ON UPDATE no action;
