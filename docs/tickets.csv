@@ -1,0 +1,84 @@
+4993,Feature,Closed,Normal,Entwicklungsumgebung aufsetzen,v0.1.0
+4999,Feature,Closed,Normal,Als IU-Student kann ich mich anmelden,v0.2.0
+5000,Feature,Closed,Normal,Als IU-Student kann ich mich registrieren,v0.2.0
+5003,Feature,Closed,Normal,"Qualitätssicherung, Demo & Benutzerhandbuch",v0.2.0
+5189,Feature,Closed,Normal,Postgres aufsetzen und User Repository implementieren,v0.2.0
+5190,Feature,Closed,Normal,OpenAPI oder ähnliches für die Input-Validierung,v0.2.0
+5191,Feature,Closed,Normal,E-Mail verification flow,v0.2.0
+5193,Bug,Closed,Normal,Leerer request body führt zu internem Server Error,v0.2.0
+5195,Feature,Closed,Normal,Erstellung einer Session und Speicherung in einem Cookie,v0.2.0
+5197,Feature,Closed,Normal,Änderung user.name zu user.username,v0.2.0
+5201,Bug,Closed,Normal,Automatic type checks,v0.2.0
+5202,Bug,Closed,Normal,Automatic fmt checks,v0.2.0
+5206,Feature,Closed,Normal,Konfiguration auf deno deploy vervollständigen,v0.2.0
+5001,Feature,Closed,Normal,Als IU-Student kann ich eine Meldung erstellen und die betroffenen Medien verlinken,v0.3.0
+5004,Feature,Closed,Normal,Als IU-Student kann ich eine Meldung bearbeiten,v0.3.0
+5192,Feature,Closed,Normal,Integration tests,v0.3.0
+5196,Feature,Closed,Normal,Implementierung der Backend-Funktionalität,v0.3.0
+5199,Feature,Closed,Normal,Anhang-Feld implementieren,v0.3.0
+5200,Feature,Closed,Normal,Implementierung des Report-Formulars,v0.3.0
+5203,Feature,Closed,Normal,Collect test coverage,v0.3.0
+5204,Feature,Closed,Normal,Username muss einzigartig sein,v0.3.0
+5272,Feature,Closed,Normal,"Als Benutzer kann ich mich nur dann anmelden, wenn auch meine Email Adresse verifiziert wurde",v0.3.0
+5273,Feature,Closed,Normal,Als Entwickler möchte ich einfach auf die aktuelle Session und den aktuellen Benutzer zugreifen können,v0.3.0
+5274,Feature,Closed,Normal,Email Transporter in der Produktivumgebung,v0.3.0
+5275,Feature,Closed,Normal,Session Cookie für Produktivumgebung anhand der Konfiguration setzen,v0.3.0
+5278,Feature,Closed,Normal,Einführung eines Permission-Systems,v0.3.0
+5281,Feature,Closed,Normal,Route zur Bearbeitung einer Meldung,v0.3.0
+5285,Feature,Closed,Normal,Frontend Komponente für ein Tag-Feld und ein Tag-Badge,v0.3.0
+5286,Feature,Closed,Normal,Login via Benutzername,v0.3.0
+5287,Feature,Closed,Normal,Bei Aktivität wird die Session automatisch verlängert,v0.3.0
+5288,Feature,Closed,Normal,Session wird beim Logout gelöscht/deaktiviert,v0.3.0
+5289,Feature,Closed,Normal,Bei inaktiver Session wird automatisch auf die Login-Seite weitergeleitet,v0.3.0
+5290,Bug,Closed,High,Deployment CI workflow gets automatically cancelled due to removal of concurrency group,v0.3.0
+5005,Feature,Closed,Normal,Als Moderator kann ich den Status einer Meldung bearbeiten,v0.4.0
+5006,Feature,Closed,Normal,Als angemeldeter User kann ich einen Kommentar zu einer Meldung hinzufügen,v0.4.0
+5276,Feature,Closed,Normal,Dropdown Button mit Statusänderung,v0.4.0
+5277,Feature,Closed,Normal,Limitierung der Statusänderung auf Moderatoren und Admins,v0.4.0
+5279,Feature,Closed,Normal,Notifikation an Meldungsersteller bei Statusänderung,v0.4.0
+5282,Feature,Closed,Normal,Frontend: Kommentar Formular als Komponente,v0.4.0
+5283,Feature,Closed,Normal,Backendfunktionalität um Kommentare zu erstellen,v0.4.0
+5339,Bug,Closed,High,Deployment schlägt teilweise fehl,v0.4.0
+5342,Feature,Closed,Normal,Frontend: Meldungs-Übersicht,v0.4.0
+5343,Feature,Closed,Normal,Frontend: Benutzer-Übersicht,v0.4.0
+5344,Feature,Closed,Normal,Frontend: Impressum und Kontakt,v0.4.0
+5345,Feature,Closed,Normal,Ein Benutzer darf lediglich eine Rolle innehaben,v0.4.0
+5346,Feature,Closed,Normal,Generisches Layout für reguläre Seiten,v0.4.0
+5349,Feature,Closed,Normal,Lebenszyklus einer Meldung soll ersichtlich sein,v0.4.0
+5351,Feature,Closed,Normal,Report lässt sich kategorisieren,v0.4.0
+5367,Bug,Closed,Normal,Probleme mit finden von npm-Modulen beim Start der Anwendung,v0.4.0
+5390,Bug,Closed,Normal,Layout Probleme unter /report/new,v0.4.0
+5002,Feature,Closed,High,"Als Moderator erhalte ich eine Notifikation, wenn eine neue Meldung erstellt wurde",v0.5.0
+5010,Feature,Closed,High,Als IU-Student kann ich alle meine erstellten Meldungen in einer Tabelle sehen,v0.5.0
+5014,Feature,Closed,Low,Als Admin kann ich Benutzer zu Moderatoren machen,v0.5.0
+5015,Feature,Closed,High,Als Moderator/Admin kann ich alle existierenden Benutzer in einer Tabelle einsehen,v0.5.0
+5029,Feature,Closed,High,Als Benutzer kann ich nach Meldungen suchen und filtern,v0.5.0
+5326,Feature,Closed,High,Fehler-Handler für reguläre Seiten,v0.5.0
+5327,Feature,Closed,Low,Vorschau-Funktion von Anhängen,v0.5.0
+5347,Bug,Closed,Normal,Links können an einen Report angehängt werden und ein Report lässt sich kategorisieren,v0.5.0
+5348,Feature,Closed,High,Bewertung bzw. Priorisierung einer Meldung,v0.5.0
+5352,Bug,Closed,High,Korrekte Permissions bei der Bearbeitung einer Meldung sind erforderlich,v0.5.0
+5354,Feature,Closed,Normal,Frontend: Passwort ändern,v0.5.0
+5389,Feature,Closed,Normal,Bei erfolgreicher Registrierung auf die Login-Seite weiterleiten,v0.5.0
+5392,Feature,Closed,Normal,Frontend: Snackbar Implementierung,v0.5.0
+5402,Bug,Closed,High,Links können an eine Meldung geheftet werden,v0.5.0
+5413,Feature,Closed,High,Frontend: Tabellen lassen sich mit Klick auf eine Spalte sortieren,v0.5.0
+5419,Bug,Closed,Normal,Logo: Font beheben,v0.5.0
+5423,Feature,Closed,High,Änderung der Zuordnung/Zuweisung/Assignee,v0.5.0
+5433,Feature,Closed,High,Frontend: Detailseite einer Meldung fertig gestalten,v0.5.0
+5438,Feature,Closed,Normal,Default Benutzer,v0.5.0
+5457,Feature,Closed,High,Testkataloge und Workflows definieren,v0.5.0
+5478,Bug,Closed,Normal,Frontend: Button optimieren,v0.5.0
+5518,Bug,Closed,Normal,Demo User können nicht verwendet werden,v0.5.0
+5519,Bug,Closed,Normal,Status Abgelehnt fehlt,v0.5.0
+5341,Feature,Closed,Normal,E2E Tests,v0.6.0
+5391,Bug,Closed,Low,"Wenn auf den FileSelector fokussiert wird, wird auf den Anfang der Seite gesprungen",v0.6.0
+5509,Feature,Closed,Normal,Frontend: mobile Ansicht,v0.6.0
+5520,Bug,Closed,Low,Bei asynchroner Aktivität ist kein Indikator ersichtlich,v0.6.0
+5521,Bug,Closed,Normal,Logout funktioniert nicht immer,v0.6.0
+5522,Bug,Closed,Normal,Buttons auf der Detailansicht sind auf der mobilen Ansicht nebeneinander,v0.6.0
+5523,Feature,Closed,Normal,Projektbericht auf GitHub,v0.6.0
+5018,Feature,New,Normal,Alle Testkataloge erneut testen,v1.0.0
+5416,Feature,Closed,Normal,Backend: Password reset,v1.0.0
+5458,Bug,Closed,Low,Verbesserung der Tabellenansicht auf mobilen Endgeräten,v1.0.0
+5532,Feature,Closed,Normal,README auf den aktuellsten Stand bringen,v1.0.0
