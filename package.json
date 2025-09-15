@@ -1,0 +1,43 @@
+{
+  "name": "iu-project",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/lumio/iu-project#readme",
+  "bugs": {
+    "url": "https://github.com/lumio/iu-project/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lumio/iu-project.git"
+  },
+  "license": "ISC",
+  "private": true,
+  "author": "",
+  "type": "commonjs",
+  "main": "",
+  "scripts": {
+    "test": "playwright test --workers=1"
+  },
+  "dependencies": {
+    "@playwright/test": "1.53.1",
+    "autoprefixer": "10.4.17",
+    "cssnano": "7.0.7",
+    "date-fns": "4.1.0",
+    "drizzle-kit": "0.31.1",
+    "drizzle-orm": "0.44.2",
+    "keychain": "1.5.0",
+    "mailgun.js": "12.0.2",
+    "nodemailer": "7.0.3",
+    "pg": "8.16.0",
+    "postcss": "8.4.35",
+    "preact": "10.22.1",
+    "react-icons": "5.5.0",
+    "resend": "4.5.2",
+    "sharp": "0.34.2",
+    "tailwindcss": "3.4.17",
+    "zod": "3.25.28"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.1"
+  }
+}
