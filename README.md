@@ -132,7 +132,7 @@ To generate a new migration:
 make sql NAME=migrations_name
 ```
 
-## Deployment
+## Deployment (Only on the repository from the project manager who is private)
 
 The application is hosted on [Deno Deploy][13] – a serverless platform designed specifically for Deno projects.
 
