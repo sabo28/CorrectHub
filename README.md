@@ -1,134 +1,132 @@
-# IU Gruppenarbeit: CorrectHub
+# IU Group Project: CorrectHub
 
-**CorrectHub** ist ein webbasiertes Korrekturmanagementsystem, das es Studierenden und Lehrenden ermöglicht, Feedback, Anmerkungen und Verbesserungsvorschläge für studentische Arbeiten systematisch zu erfassen und nachzuverfolgen.
+**CorrectHub** is a web-based correction management system that enables students and instructors to systematically collect and track feedback, comments, and suggestions for improvement on student submissions.
 
 ---
 
-### 🎯 Für Recruiter: Kontext & Mein Beitrag
+### 🎯 For Recruiters: Context & My Contribution
 
-Dieses Repository enthält den finalen Source Code meines Hochschul-Gruppenprojekts, das mit der Note 1,0 bewertet wurde. Das ursprüngliche Entwicklungs-Repository mit der vollständigen Commit- und Pull-Request-Historie ist privat und im Besitz der Projektleitung.
+This repository contains the final source code of my university group project, which received a **grade of 1.0 (A+)**.  
+The original development repository, including the complete commit and pull request history, is private and owned by the project lead.
 
-In diesem Projekt war ich **maßgeblich für die Entwicklung des Backends sowie für die Erstellung des Frontend-Prototypen** verantwortlich.
+In this project, I was **primarily responsible for backend development as well as creating the frontend prototype**.
 
-**Meine Kernbeiträge umfassten:**
+**My key contributions included:**
 
-* **Backend-Entwicklung (Deno, TypeScript):**
-    * Konzeption und Implementierung der REST-API zur Verwaltung von Nutzern, Einreichungen und Feedback.
-    * Design des Datenbankschemas und Umsetzung der Datenbankmigrationen mit Drizzle ORM.
-    * Implementierung der Geschäftslogik nach den Prinzipien des Domain-Driven Design (DDD).
-* **Frontend-Prototyping (Fresh):**
-    * Aufbau der grundlegenden UI-Komponenten und Seitenstruktur.
-    * Sicherstellung der serverseitigen Renderings (SSR) für eine performante Nutzererfahrung.
+* **Backend Development (Deno, TypeScript):**
+  * Designed and implemented the REST API for managing users, submissions, and feedback.
+  * Designed the database schema and implemented migrations using Drizzle ORM.
+  * Implemented business logic following Domain-Driven Design (DDD) principles.
+* **Frontend Prototyping (Fresh):**
+  * Built the basic UI components and page structure.
+  * Ensured server-side rendering (SSR) for high performance and a smooth user experience.
 * **DevOps & Testing:**
-    * Einrichtung der Testumgebung für Unit- und Integrationstests (`deno test`).
-    * Konfiguration der CI/CD-Pipeline über GitHub Actions für automatisierte Deployments auf Deno Deploy.
+  * Set up the testing environment for unit and integration tests (`deno test`).
+  * Configured the CI/CD pipeline via GitHub Actions for automated deployments to Deno Deploy.
 
-### 🏛️ Architektur & Technologie-Stack
+---
 
-Wir haben uns für einen modernen, auf Deno basierenden Tech-Stack entschieden, um von nativer TypeScript-Unterstützung, hoher Sicherheit und exzellenter Performance zu profitieren.
+### 🏛️ Architecture & Technology Stack
 
-* **Runtime:** [Deno][1]
-* **Webframework:** [Fresh][2] (Server-Side Rendering, Islands Architecture)
-* **Datenbank & ORM:** PostgreSQL (via [Docker][3]) & [Drizzle ORM][12]
-* **Testing:** [Deno Test][8], [Playwright][11] (E2E)
+We chose a modern Deno-based stack to leverage native TypeScript support, strong security, and excellent performance.
+
+* **Runtime:** [Deno][1]  
+* **Web Framework:** [Fresh][2] (Server-Side Rendering, Islands Architecture)  
+* **Database & ORM:** PostgreSQL (via [Docker][3]) & [Drizzle ORM][12]  
+* **Testing:** [Deno Test][8], [Playwright][11] (E2E)  
 * **Deployment:** [Deno Deploy][13] (via GitHub Actions CI/CD)
 
 ---
 
 <details>
-<summary>💻 Technische Dokumentation (Quick Start, Tests & mehr)</summary>
+<summary>💻 Technical Documentation (Quick Start, Tests & More)</summary>
 
 ### 🚀 Quick Start
 
-> [!note] Stelle sicher, dass alle [Voraussetzungen](#vorbereitung) erfüllt
-> sind.
+> [!note]
+> Make sure all [prerequisites](#setup) are met.
 
-1.  `make` im Terminal ausführen
-2.  http://localhost:8000 im Browser aufrufen
+1. Run `make` in your terminal  
+2. Open [http://localhost:8000](http://localhost:8000) in your browser
 
-### Vorbereitung
+### Setup
 
-Folgende Tools werden benötigt
+You will need the following tools installed:
 
-- [Docker][3] (z.B. Docker for Desktop)
-- [deno][1] (zur aktiven Entwicklung)
-- [Node.js][4] (erforderlich für die Durchführung von E2E Tests)
-- [git][5] (optional zur aktiven Entwicklung)
-- [make][6] (unter Windows z.B. über WSL oder GnuWin32)
+- [Docker][3] (e.g. Docker for Desktop)
+- [deno][1] (for active development)
+- [Node.js][4] (required for running E2E tests)
+- [git][5] (optional, for active development)
+- [make][6] (on Windows, via WSL or GnuWin32)
 
-### Entwicklungsumgebung
+### Development Environment
 
-Dieses Projekt ist optimiert für [Visual Studio Code][7]. Bereits integriert
-sind:
+This project is optimized for [Visual Studio Code][7]. The following tools are already integrated:
 
 - [Linting][8]
-- [Formatierung][9] als auch
-- [Type Checking][10] und
+- [Formatting][9]
+- [Type Checking][10]
 - Hot Reloading
 
-## Starten der Entwicklungsumgebung
+## Start Development Environment
 
-```shell
+```bash
 make
 ```
 
-Dies startet das Projekt per Docker Compose im Entwicklungsmodus. Änderungen am
-Code werden automatisch geladen (Hot Reloading). Die Anwendung ist anschließend
-erreichbar unter:
+This starts the project in development mode via Docker Compose.
+Any code changes are automatically reloaded (Hot Reloading). The app will then be available at:
+
 
 http://localhost:8000
-
-> [!note] `make` entspricht dem Befehl `make start`, der wiederum
-> `docker compose up` ausführt.
+> [!note] `make` is equivalent to running `make start`, which is turn runs
+> `docker compose up`.
 
 ## Clean Start
 
-Wenn du die Anwendung mit einem leeren Zustand starten möchtest, führe folgendes
-aus:
+To start the application from a clean state, run:
 
 ```shell
 make clean start
 ```
 
-Dies stoppt und entfernt bestehende Container und startet das Projekt von Grund
-auf neu.
+This stops and removes existing containers and restarts the project from scratch.
 
 ## Unit- und Integrationstests
 
-Automatisierte Tests können wie folgt ausgeführt werden:
+To run automated tests:
 
 ```shell
 make test
 ```
 
-Dieser Befehl führt sowohl Linting (`deno lint`), Type Checking (`deno check`)
-als auch die eigentlichen Tests (`deno test`) aus.
+This command runs Linting (`deno lint`), Type Checking (`deno check`), and the tests (`deno test`).
 
-### Testabdeckung
+### Test Coverage
 
-Um die Testabdeckung zu ermitteln, verwende:
+To generate test coverage data:
 
 ```shell
 make test-coverage
 ```
 
-Die Coverage-Daten werden dann im Verzeichnis `coverage` abgelegt.
+Coverage data will be saved to the `coverage` directory.
 
 ## End-to-End (E2E) Tests
 
-Für End-to-End-Tests wird [Playwright][11] verwendet.
+End-to-end testing is done using [Playwright][11].
 
 ```shell
 make e2e
 ```
 
-> [!warning] Hier wird die bestehen Umgebung gelöscht und neu gestartet
-> (`make clean`), bevor die Tests ausgeführt werden.
+> [!warning] This will reset the environment
+> (`make clean`) before running the tests.
 
-## Datenbankmigrationen
+## Database Migrations
 
-Datenbank-Migrationen erfolgen mit [Drizzle ORM][12]. Um neue Migrationen zu
-generieren:
+Database migrations are handled via [Drizzle ORM][12].
+To generate a new migration:
 
 ```
 make sql NAME=migrations_name
@@ -136,24 +134,21 @@ make sql NAME=migrations_name
 
 ## Deployment
 
-Für das Hosting kommt [Deno Deploy][13] zum Einsatz – eine serverlose Plattform
-speziell für Deno-Projekte.
+The application is hosted on [Deno Deploy][13] – a serverless platform designed specifically for Deno projects.
 
-Das Deployment erfolgt in 2 Ebenen:
+Deployment happens on two levels:
 
 ### 1. Staging-System
 
-Sobald ein neuer Pull Request (PR) auf GitHub erstellt wird, wird automatisch
-ein Deployment in der Staging-Umgebung durchgeführt. So können Änderungen vor
-dem Merge in einer realitätsnahen Umgebung getestet und überprüft werden.
+Whenever a new Pull Request (PR) is created on GitHub, a deployment is automatically triggered for the staging environment.
+This allows changes to be tested in a realistic setup before merging.
 
-> [!tip] Die Staging-URL wird direkt im jeweiligen PR angezeigt.
+> [!tip] The staging URL is displayed directly in the respective PR.
 
 ### 2. Live-System
 
-Sobald ein Pull Request in den main-Branch gemerged wird, erfolgt automatisch
-das Deployment auf die Produktionsumgebung. Dabei wird die Anwendung über Deno
-Deploy aktualisiert und unter der Live-URL bereitgestellt.
+Once a Pull Request is merged into the main branch, the application is automatically deployed to production.
+The live version is updated via Deno Deploy and made available under the production URL.
 </details>
 
 [1]: https://deno.com/
